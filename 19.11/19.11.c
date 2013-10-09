@@ -20,7 +20,7 @@ int sort(int a[], int n) {
 int getPair(int a[], int n, int sum) {
 	int low = 0;
 	int high = n-1;
-	while(low<high) {
+	while(low < high) {
 		if (a[low] + a[high] > sum) {
 			--high;
 		} else if (a[low] + a[high] < sum) {
@@ -35,7 +35,7 @@ int getPair(int a[], int n, int sum) {
 
 int main()
 {
-	int a[] = {6,5,4,3,2,1};
+	int a[] = {6, 5, 4, 3, 2, 1};
 	int n = sizeof(a)/sizeof(a[0]);
 	int i, j;
 	int pair;
