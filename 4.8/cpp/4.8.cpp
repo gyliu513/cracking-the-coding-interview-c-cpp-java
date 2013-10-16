@@ -15,7 +15,7 @@ Node *createMinimialTree(Node* &head, Node *parent, int a[], int start, int end)
     if (start <= end) {
         int mid = (start + end) >> 1;
         node[cnt].key = a[mid];
-        node[cnt].parent = head;
+        node[cnt].parent = parent;
         head = &node[cnt++];
         createMinimialTree(head->lchild, head, a, start, mid-1);
         createMinimialTree(head->rchild, head, a, mid+1, end);
