@@ -12,8 +12,8 @@ void partitionAtX(node *listHead, int x);
 
 int main()
 {
-        int list[6] = {5, 4, 3, 2, 1, 0};
-        node *head = createLinkedList(list, 6);
+        int list[8] = {5, 4, 3, 1, 5, 2, 1, 0};
+        node *head = createLinkedList(list, 8);
         int x = 3;
 
         printf("Original:\t");
