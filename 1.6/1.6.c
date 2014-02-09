@@ -14,14 +14,14 @@ int main(){
             printf("%c ", m[i][j]);
         printf("\n");
     }
-    printf("======================\n");
-    for(i=0; i<3; ++i){
+    printf("==========reverse clock 90=========\n");
+    for(i=0; i<=3; ++i){
         for(j=0; j<N; ++j)
             printf("%c ", m[j][N-1-i]);
         printf("\n");
     }
-    printf("======================\n");
-    for(i=2; i>=0; --i){
+    printf("===========clock 90========\n");
+    for(i=3; i>=0; --i){
         for(j=N-1; j>=0; --j)
             printf("%c ", m[j][N-1-i]);
         printf("\n");
