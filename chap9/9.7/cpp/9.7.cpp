@@ -34,6 +34,8 @@ int main(){
     for(int i=0; i<n; ++i)
         cin>>p[i].h>>p[i].w;
     sort(p, p+n, cmp);
+    for (int i=0; i<n; i++)
+        cout << "after sort " << p[i].h << " " << p[i].w << endl;
     cout<<lis(p, n)<<endl;
     fclose(stdin);
     return 0;
