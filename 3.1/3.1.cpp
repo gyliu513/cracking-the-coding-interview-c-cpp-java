@@ -17,7 +17,7 @@ class mystack{
             delete [] buf;
         }
         void push(int stackNum, int val) {
-            but[cur].val = val;
+            buf[cur].val = val;
             buf[cur].preIndex = ptop[stackNum];
             ptop[stackNum] = cur;
             cur++;
