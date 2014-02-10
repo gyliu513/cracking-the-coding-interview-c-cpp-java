@@ -8,4 +8,5 @@ def fibo(n):
     else:
         return -1
 
-print fibo(4)
+if __name__ == "__main__":
+    print fibo(4)
