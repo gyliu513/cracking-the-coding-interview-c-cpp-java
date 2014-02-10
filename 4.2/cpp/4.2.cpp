@@ -38,7 +38,8 @@ int main(){
         cin>>u>>v;
         g[u][v] = true;
     }
-    cout<<route(1, 3)<<endl;
+    cout<<route(2, 7)<<endl;
+    cout<<route(7, 2)<<endl;
     fclose(stdin);
     return 0;
 }
