@@ -16,6 +16,26 @@ reverseStr(char str[]) {
     }
     return 0;
 }
+
+static int
+reverseStr2(char *str) {
+    int len = strlen(str);
+    printf("len %d\n", len);
+    char tmp = '\0';
+    char *pBegin = str;
+    char *pEnd = pBegin;
+    while(*pEnd != '\0') {
+        pEnd++;
+    }
+    pEnd--;
+    while (pBegin < pEnd) {
+        tmp = *pBegin;
+        *pBegin = *pEnd;
+        *pEnd = tmp;
+        pBegin++;
+        pEnd--;
+    }
+}
  
 int main()
 {
@@ -23,4 +43,8 @@ int main()
     printf("original str %s\n", str);
     reverseStr(str);
     printf("reversed str %s\n", str);
+
+    char *str2 = strdup("1234abcd");
+    reverseStr2(str2);
+    printf("after reverse: %s\n", str2);
 }
