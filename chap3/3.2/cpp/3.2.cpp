@@ -51,7 +51,10 @@ class stackWithMin
         {
             if (s1.top() == min()) 
             {
-                s2.pop();
+                int tmp = s1.top();
+                s1.pop();
+                if (s1.top() != min())
+                    s2.pop();
             }
             s1.pop();
         }
@@ -72,8 +75,14 @@ class stackWithMin
 int main()
 {
     stackWithMin s;
-    s.push(10);
-    s.push(4);
-    s.push(20);
+    s.push(2);
+    s.push(2);
+    s.push(2);
+    s.push(2);
+    s.push(2);
+    cout << s.min() << endl;
+    s.pop();
+    cout << s.min() << endl;
+    s.pop();
     cout << s.min() << endl;
 }
